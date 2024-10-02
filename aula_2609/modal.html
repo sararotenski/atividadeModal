@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal</title>
     <link href = "modal.css" rel = "stylesheet">
+    <script src="modal.js"></script>
 </head>
 <body>
     
     <!--Criando o botão que fará o modal aparecer-->
     <div id = "openModal">
-    <button onclick = "abrirModal()" id = "btnModal">ABRIR MODAL</button>
+    <button id = "btnModal">ABRIR MODAL</button>
     </div>
 
-    <!--O modal-->
-    <div id = "myModal">
+    <!--Efeito preto opaco que fica no fundo-->
+    <div id = "fade" class = "hide"></div>
+
+        <!--O modal-->
+    <div id = "modal" class = "hide">
 
         <!--O conteúdo do modal-->
-        <div id = "conteudoModal">
-            <span class = "close">&times;</span>
-            <p>aaaaaaa</p>
-        </div>
+            <h2>Esse é o Modal</h2>
+            <button id = "close">Fechar</button>
 
     </div>
 
