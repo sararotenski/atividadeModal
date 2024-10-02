@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link href = "modal.css" rel = "stylesheet">
+</head>
+<body>
+    
+    <!--Criando o botão que fará o modal aparecer-->
+    <div class = "abrirModal">
+    <button id="openModal" onclick="abrirModal()">ABRIR MODAL</button>
+    </div>
+
+    <!--Criando o modal-->
+    <div id="meuModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Esse é o modal✨✨✨</h2>
+        </div>
+    </div>
+
+    <script src="modal.js"></script>
+
+</body>
+</html>
+
